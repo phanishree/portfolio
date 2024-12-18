@@ -2,4 +2,4 @@
 
 Initial commit 
 
-portfolio built in React
+portfolio built in React.
