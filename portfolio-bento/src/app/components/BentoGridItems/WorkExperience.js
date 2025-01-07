@@ -4,7 +4,7 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 export default function WorkExperience() {
     return (
-      <div className="w-full h-full text-white rounded-lg shadow-lg flex flex-col items-center justify-center space-y-4 p-4">
+      <div className="w-full h-full text-white  bg-darkNavy rounded-lg shadow-lg flex flex-col items-center justify-center space-y-4 p-4 transform hover:scale-101 hover:shadow-lg transition duration-300 cursor-pointer">
         {/* Title */}
         <p className="text-2xl font-bold">Work Experience</p>
   

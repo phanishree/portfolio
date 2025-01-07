@@ -1,6 +1,6 @@
 import React from 'react';
 import WorkExperience from './BentoGridItems/WorkExperience';
-import { Typewriter } from 'react-simple-typewriter';
+import TypeWriterEffect from './TypeWriterEffect';
 
 const Portfolio = () => {
 
@@ -10,7 +10,7 @@ const Portfolio = () => {
       {/* Desktop Layout - Only visible on large screens */}
       <div className="hidden lg:block relative w-full h-screen">
         {/* Work Experience */}
-        <div className="absolute top-4 left-4 w-[30vw] h-[62vh] bg-darkNavy text-lightNeutral rounded-lg shadow-[0px_0px_10px_1px_rgba(45,_63,_98,_0.5)] animate-float1 flex items-center justify-center">
+        <div className="absolute top-4 left-4 w-[30vw] h-[62vh] text-lightNeutral rounded-lg shadow-[0px_0px_10px_1px_rgba(45,_63,_98,_0.5)] animate-float1 flex items-center justify-center">
           <WorkExperience />
         </div>
 
@@ -47,7 +47,7 @@ const Portfolio = () => {
         {/* Center Block (Name and Title) */}
         <div className="absolute top-[25vh] left-[32vw] w-[50vw] h-[38vh] bg-lightNeutral text-darkNavy rounded-lg shadow-[0px_0px_10px_1px_rgba(45,_63,_98,_0.5)] animate-float8 flex flex-col items-center justify-center text-center">
           <p className="font-bold text-xl">
-          <Typewriter
+          {/* <Typewriter
             words={['Phanishree']}
             cursor
             cursorStyle='_'
@@ -55,9 +55,10 @@ const Portfolio = () => {
             typeSpeed={70}
             deleteSpeed={50}
             delaySpeed={1000}
-          />
+          /> */}
+          <TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true}/>
           </p>
-          <p className="text-sm">Creative Web Developer, Content Creator</p>
+          <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]}/></p>
         </div>
       </div>
 
@@ -65,8 +66,8 @@ const Portfolio = () => {
       <div className="lg:hidden flex flex-col space-y-4 p-4">
         {/* Name and Title */}
         <div className="w-full bg-lightNeutral text-darkNavy rounded-lg shadow-lg p-6 text-center">
-          <p className="font-bold text-xl">Phanishree</p>
-          <p className="text-sm">Creative Web Developer, Content Creator</p>
+          <p className="font-bold text-xl"><TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true}/></p>
+          <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]}/></p>
         </div>
 
         {/* Work Experience */}

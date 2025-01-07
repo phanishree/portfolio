@@ -7,6 +7,10 @@ export default {
   ],
   theme: {
     extend: {
+      scale: {
+        '101': '1.01',
+        '102': '1.02',
+      },
       fontFamily: {
         quicksand: ['Quicksand', 'sans-serif'], // Fallback to sans-serif
       },
