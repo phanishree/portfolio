@@ -1,14 +1,6 @@
 "use client"
-import Image from "next/image";
-
-import BentoGrid from './components/BentoGrid';
-import Portfolio from "./components/PortfolioHome";
+import { redirect } from "next/navigation";
 
 export default function Home() {
-  return (
-    <main>
-    {/* <BentoGrid /> */}
-    <Portfolio/>
-  </main>
-  );
+  redirect("/home");
 }

@@ -32,11 +32,16 @@ export default {
         float6: "float 7s ease-in-out infinite",
         float7: "float 7.2s ease-in-out infinite",
         float8: "float 8s ease-in-out infinite",
+        progress: 'progress 5s linear forwards',
       },
       keyframes: {
         float: {
           "0%, 100%": { transform: "translateY(0)" },
           "50%": { transform: "translateY(-10px)" },
+        },
+        progress: {
+          '0%': { width: '100%' },
+          '100%': { width: '0%' },
         },
       },
     },
