@@ -6,7 +6,7 @@ const Portfolio = () => {
 
 
   return (
-<div className="relative w-full min-h-screen bg-gray-100">
+    <div className="relative w-full min-h-screen bg-gray-100">
       {/* Desktop Layout - Only visible on large screens */}
       <div className="hidden lg:block relative w-full h-screen">
         {/* Work Experience */}
@@ -47,7 +47,7 @@ const Portfolio = () => {
         {/* Center Block (Name and Title) */}
         <div className="absolute top-[25vh] left-[32vw] w-[50vw] h-[38vh] bg-lightNeutral text-darkNavy rounded-lg shadow-[0px_0px_10px_1px_rgba(45,_63,_98,_0.5)] animate-float8 flex flex-col items-center justify-center text-center">
           <p className="font-bold text-xl">
-          {/* <Typewriter
+            {/* <Typewriter
             words={['Phanishree']}
             cursor
             cursorStyle='_'
@@ -56,9 +56,9 @@ const Portfolio = () => {
             deleteSpeed={50}
             delaySpeed={1000}
           /> */}
-          <TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true}/>
+            <TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true} />
           </p>
-          <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]}/></p>
+          <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]} /></p>
         </div>
       </div>
 
@@ -66,8 +66,8 @@ const Portfolio = () => {
       <div className="lg:hidden flex flex-col space-y-4 p-4">
         {/* Name and Title */}
         <div className="w-full bg-lightNeutral text-darkNavy rounded-lg shadow-lg p-6 text-center">
-          <p className="font-bold text-xl"><TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true}/></p>
-          <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]}/></p>
+          <p className="font-bold text-xl"><TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true} /></p>
+          <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]} /></p>
         </div>
 
         {/* Work Experience */}
