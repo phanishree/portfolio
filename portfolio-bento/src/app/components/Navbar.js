@@ -51,7 +51,7 @@ export default function NavBar({ selected }) {
             </div>
             {/* Dropdown Menu (Mobile View) */}
             {isMenuOpen && (
-                <div className="lg:hidden mt-4 bg-white rounded-lg shadow-lg p-4 absolute m-4 top-4 right-0">
+                <div className="lg:hidden mt-4 bg-black rounded-lg shadow-lg p-4 absolute m-4 top-4 right-0">
                     <Link href="/home">
                         <div className={getLinkClass("home")}>Home</div>
                     </Link>
