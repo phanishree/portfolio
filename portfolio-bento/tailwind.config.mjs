@@ -7,6 +7,9 @@ export default {
   ],
   theme: {
     extend: {
+      rotate: {
+        '-45': '-45deg',
+      },
       scale: {
         '101': '1.01',
         '102': '1.02',
