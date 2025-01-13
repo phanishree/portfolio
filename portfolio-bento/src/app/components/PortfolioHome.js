@@ -1,6 +1,7 @@
 import React from 'react';
 import WorkExperience from './BentoGridItems/WorkExperience';
 import TypeWriterEffect from './TypeWriterEffect';
+import Resume from './BentoGridItems/Resume';
 
 const Portfolio = () => {
 
@@ -31,7 +32,7 @@ const Portfolio = () => {
 
         {/* Resume */}
         <div className="absolute bottom-4 left-4 w-[25vw] h-[33vh] bg-darkNavy text-lightNeutral rounded-lg shadow-[0px_0px_10px_1px_rgba(45,_63,_98,_0.5)] animate-float5 flex items-center justify-center">
-          Resume
+          <Resume/>
         </div>
 
         {/* Contact Me */}
@@ -92,7 +93,7 @@ const Portfolio = () => {
 
         {/* Resume */}
         <div className="w-full bg-darkNavy text-lightNeutral rounded-lg shadow-lg p-6 min-h-[200px] flex items-center justify-center">
-          Resume
+          <Resume/>
         </div>
 
         {/* Contact Me */}
