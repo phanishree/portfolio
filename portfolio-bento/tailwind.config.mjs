@@ -29,6 +29,8 @@ export default {
         sage: '#3F4E4F',
         indigo: '#1B2430',
         purple: '#51557E',
+        mainBg: 'hsl(215, 26%, 7.5%)',
+        borderColor: '#1f2b3a',
       },
       animation: {
         float1: "float 6s ease-in-out infinite",
