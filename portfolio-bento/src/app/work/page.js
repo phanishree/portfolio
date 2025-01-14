@@ -136,7 +136,7 @@ export default function WorkExperience() {
     ];
 
     return (
-        <div className="bg-indigo w-[100vw] h-[100vh] flex flex-col relative">
+        <div className="bg-mainBg w-[100vw] h-[100vh] flex flex-col relative">
             <NavBar selected="work" />
 
             <div className="flex-1 overflow-y-auto p-4 relative">

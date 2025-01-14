@@ -34,6 +34,7 @@ export default function ResumeViewer() {
 
     
     return <>
+    <div className="bg-mainBg w-full h-full">
     <NavBar selected="resume"/>
     <DocViewer
             documents={docs}
@@ -50,6 +51,7 @@ export default function ResumeViewer() {
                 },
             }}
             
-            style={{ width: "100vw", height: "100vh", backgroundColor: "beige" }} />
+            style={{ width: "100vw", height: "100vh", backgroundColor: "transparent" }} />
+    </div>
             </>;
 }
