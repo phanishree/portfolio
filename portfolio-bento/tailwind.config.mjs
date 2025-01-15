@@ -7,6 +7,12 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+    },
       rotate: {
         '-45': '-45deg',
       },
@@ -42,6 +48,7 @@ export default {
         float7: "float 7.2s ease-in-out infinite",
         float8: "float 8s ease-in-out infinite",
         progress: 'progress 2s linear forwards',
+        marquee: "marquee 10s linear infinite",
       },
       keyframes: {
         float: {
@@ -51,6 +58,10 @@ export default {
         progress: {
           '0%': { width: '100%' },
           '100%': { width: '0%' },
+        },
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-100%)" },
         },
       },
     },
