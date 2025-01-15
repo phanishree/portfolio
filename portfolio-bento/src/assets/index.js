@@ -12,19 +12,23 @@ import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
+import aws from "./tech/aws.png";
+import java from "./tech/java.png";
+import nextjs from "./tech/nextjs.png";
+import webrtc from "./tech/webrtc.png";
 
 export {
-
+  aws,
+  java,
+  nextjs,
+  webrtc,
   css,
   docker,
-  figma,
-  git,
   html,
   javascript,
   mongodb,
   nodejs,
   reactjs,
-  redux,
   tailwind,
   typescript,
   threejs,
