@@ -7,6 +7,8 @@ import NavBar from "../components/Navbar";
 import { technologies } from "@/constants";
 import BallCanvas from "../components/canvas/Ball";
 
+//YET TO FIX THE WEBGL ERROR
+
 const ItemType = "BALL";
 
 function DraggableBall({ item, fromList, onDropBack, type }) {
