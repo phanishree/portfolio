@@ -123,6 +123,8 @@ export default function Skills() {
     };
 
     const isTouchDevice = () => {
+        // console.log(TouchBackend);
+        // console.log(HTML5Backend);
         if (typeof window === "undefined") return false;
         return (
             "ontouchstart" in window ||
@@ -132,7 +134,13 @@ export default function Skills() {
     };
 
     return (
-        <DndProvider backend={isTouchDevice() ? TouchBackend : HTML5Backend}>
+        <DndProvider
+            backend={isTouchDevice()
+                ? TouchBackend
+                : HTML5Backend}
+
+            options={ {enableTouchEvents: true}}
+        >
             <div className="bg-mainBg min-h-screen w-full flex flex-col" ref={containerRef}>
                 <NavBar selected="skills" />
                 <div className="flex items-center justify-center flex-col p-4 lg:mt-[15dvh] mt-[5dvh]">
@@ -201,8 +209,8 @@ export default function Skills() {
                                 <h3 className="text-base text-lightNeutral mb-4 text-center">
                                     Drag and drop the icons to the respective placeholders. That is, if you can!
                                 </h3>
-                                <div className="overflow-y-none max-h-[40vh] px-4 py-4 rounded-lg bg-cardBg/30">
-                                    <div className="flex flex-wrap justify-center gap-6">
+                                <div className="overflow-y-none max-h-[80vh] px-4 py-4 rounded-lg bg-cardBg/30">
+                                    {availableItems.length > 0 ? <div className="flex flex-wrap justify-center gap-6">
                                         {availableItems.map((item) => (
                                             <DraggableBall
                                                 key={item.name}
@@ -211,6 +219,7 @@ export default function Skills() {
                                             />
                                         ))}
                                     </div>
+                                    : <p className="text-center text-lightNeutral text-base">Yay! 10 points to you 🎉</p>}
                                 </div>
                             </div>
                         </div>

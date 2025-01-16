@@ -77,14 +77,14 @@ const Portfolio = () => {
           <WorkExperience />
         </div>
 
-        {/* Projects */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
-          Projects
-        </div>
-
         {/* Skills */}
         <div className="w-full bg-mainBg text-lightNeutral rounded-lg shadow-lg p-6 min-h-[200px] flex items-center justify-center">
           <Skills/>
+        </div>
+
+        {/* Projects */}
+        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
+          Projects
         </div>
 
         {/* Education */}
