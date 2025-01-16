@@ -3,6 +3,7 @@ import WorkExperience from './BentoGridItems/WorkExperience';
 import TypeWriterEffect from './TypeWriterEffect';
 import Resume from './BentoGridItems/Resume';
 import Skills from './BentoGridItems/Skills';
+import Socials from './BentoGridItems/Socials';
 
 const Portfolio = () => {
 
@@ -38,7 +39,7 @@ const Portfolio = () => {
 
         {/* Contact Me */}
         <div className="absolute bottom-4 left-[27vw] w-[51vw] h-[33vh] bg-mainBg text-lightNeutral rounded-lg  animate-float6 flex items-center justify-center">
-          Contact Me
+          <Socials/>
         </div>
 
         {/* Social Icons */}
@@ -99,7 +100,7 @@ const Portfolio = () => {
 
         {/* Contact Me */}
         <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
-          Contact Me
+          <Socials/>
         </div>
 
         {/* Social Icons */}
