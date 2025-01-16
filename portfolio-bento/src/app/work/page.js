@@ -139,7 +139,7 @@ export default function WorkExperience() {
         <div className="bg-mainBg w-[100vw] h-[100vh] flex flex-col relative">
             <NavBar selected="work" />
 
-            <div className="flex-1 overflow-y-auto overflow-x-none p-4 relative">
+            <div className="flex-1 overflow-y-auto overflow-x-hidden p-4 relative">
                 <motion.header
                     initial={{ opacity: 0, x: -250 }}
                     animate={{ opacity: 1, x: 0 }}
