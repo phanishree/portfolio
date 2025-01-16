@@ -219,7 +219,7 @@ export default function Skills() {
                                             />
                                         ))}
                                     </div>
-                                    : <p className="text-center text-lightNeutral text-base">Yay! 10 points to you 🎉</p>}
+                                    : <p className="text-center text-lightNeutral text-base">Yay ! 10 points to you 🎉</p>}
                                 </div>
                             </div>
                         </div>

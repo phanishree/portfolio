@@ -15,7 +15,7 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl]);
 
   return (
-    <Float speed={0.75} rotationIntensity={1} floatIntensity={2}>
+    <Float speed={1.75} rotationIntensity={1} floatIntensity={2}>
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
@@ -45,7 +45,13 @@ const BallCanvas = ({ icon }) => {
     <div ref={ref} style={{ width: '100%', height: '100%', position: 'relative' }}>
       <View style={{ position: 'absolute', width: '100%', height: '100%' }}>
         <Suspense fallback={<CanvasLoader />}>
-          <OrbitControls enableZoom={false} />
+          <OrbitControls
+            enableZoom={false}
+            minPolarAngle={(5 * Math.PI) / 12} // Slight upward tilt (75 degrees)
+            maxPolarAngle={(7 * Math.PI) / 12} // Slight downward tilt (105 degrees)
+            minAzimuthAngle={-Math.PI / 12} // Restrict left rotation
+            maxAzimuthAngle={Math.PI / 12} // Restrict right rotation
+          />
           <Ball imgUrl={icon} />
         </Suspense>
       </View>
