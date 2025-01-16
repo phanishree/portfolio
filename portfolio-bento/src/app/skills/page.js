@@ -153,7 +153,10 @@ export default function Skills() {
                         <View.Port />
                     </Canvas>
 
-                    <div className="flex items-center justify-center space-x-4 p-4 w-full">
+                    <p className="text-lightNeutral text-base text-center mb-[10px]">Tech stacks i have worked with</p>
+
+
+                    <div className="hidden lg:flex items-center justify-center space-x-4 p-4 w-full">
                         <button
                             onClick={() => setSelected("recruiters")}
                             className={`px-4 py-2 rounded-full border-2 text-base ${
@@ -180,7 +183,7 @@ export default function Skills() {
                         <div className="flex flex-wrap justify-center gap-6">
                             {technologies.map((technology) => (
                                 <div
-                                    className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 flex flex-col justify-center items-center"
+                                    className="w-28 h-28 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 flex flex-col justify-center items-center"
                                     key={technology.name}
                                 >
                                     <div className="w-full h-full">
