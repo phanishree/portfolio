@@ -135,7 +135,7 @@ export default function Skills() {
         <DndProvider backend={isTouchDevice() ? TouchBackend : HTML5Backend}>
             <div className="bg-mainBg min-h-screen w-full flex flex-col" ref={containerRef}>
                 <NavBar selected="skills" />
-                <div className="flex items-center justify-center flex-col p-4 mt-[10vh]">
+                <div className="flex items-center justify-center flex-col p-4 lg:mt-[15dvh] mt-[5dvh]">
                     <Canvas
                         className="canvas"
                         style={{ position: "fixed", top: 0, left: 0, pointerEvents: "none" }}
@@ -169,7 +169,7 @@ export default function Skills() {
                     </div>
 
                     {selected === "recruiters" && (
-                        <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6">
+                        <div className="flex flex-wrap justify-center gap-6">
                             {technologies.map((technology) => (
                                 <div
                                     className="w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 lg:w-32 lg:h-32 flex flex-col justify-center items-center"
@@ -186,7 +186,7 @@ export default function Skills() {
 
                     {selected === "everyone" && (
                         <div className="w-full max-w-7xl mx-auto">
-                            <div className="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-6 lg:grid-cols-8 gap-6 mb-8">
+                            <div className="flex flex-wrap justify-center gap-6">
                                 {placeholders.map((placeholder) => (
                                     <Placeholder
                                         key={placeholder.expectedType}
@@ -201,7 +201,7 @@ export default function Skills() {
                                 <h3 className="text-base text-lightNeutral mb-4 text-center">
                                     Drag and drop the icons to the respective placeholders. That is, if you can!
                                 </h3>
-                                <div className="overflow-y-auto max-h-[40vh] px-4 py-4 rounded-lg bg-cardBg/30">
+                                <div className="overflow-y-none max-h-[40vh] px-4 py-4 rounded-lg bg-cardBg/30">
                                     <div className="flex flex-wrap justify-center gap-6">
                                         {availableItems.map((item) => (
                                             <DraggableBall
