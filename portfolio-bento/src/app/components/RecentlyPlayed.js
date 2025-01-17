@@ -9,10 +9,20 @@ export function RecentlyPlayed() {
   useEffect(() => {
     const fetchTrack = async () => {
       try {
-        const response = await fetch('/api/spotify/recently-played');
+        const response = await fetch(`/api/spotify/recently-played?t=${Date.now()}`, {
+            cache: 'no-store',
+            headers: {
+              'Pragma': 'no-cache',
+              'Cache-Control': 'no-cache'
+            }
+          });
         if (!response.ok) throw new Error('Failed to fetch track');
+
         const data = await response.json();
-        setTrack(data.items[0]); // Get only the most recent track
+
+        if (data.items && data.items[0] && (!track || data.items[0].played_at !== track.played_at)) {
+          setTrack(data.items[0]);
+        }
       } catch (err) {
         setError(err.message);
       } finally {
@@ -49,7 +59,7 @@ export function RecentlyPlayed() {
       className="relative flex items-center gap-4 bg-transparent p-4 rounded-xl w-full h-full max-w-md cursor-pointer hover:bg-[#282828] transition-colors duration-200"
     >
       <img 
-        src={track.track.album.images[2]?.url || '/api/placeholder/64/64'} 
+        src={`${track.track.album.images[2]?.url}?t=${Date.now()}`}
         alt={track.track.album.name}
         className="w-18 h-18 rounded-md"
       />

@@ -9,7 +9,7 @@ export async function GET() {
       headers: {
         Authorization: `Bearer ${token}`,
       },
-      next: { revalidate: 30 }, // Cache for 30 seconds
+      cache: 'no-store', // Disable caching at fetch level
     });
 
     if (!response.ok) {
@@ -17,9 +17,24 @@ export async function GET() {
     }
 
     const data = await response.json();
-    return NextResponse.json(data);
+    // console.log('API Response:', data.items[0]);
+    
+    
+    // Set no-cache headers in the response
+    const headers = {
+      'Cache-Control': 'no-cache, no-store, must-revalidate',
+      'Pragma': 'no-cache',
+      'Expires': '0',
+    };
+
+    return NextResponse.json(data, { headers });
   } catch (error) {
     console.error('Error fetching recently played:', error);
     return NextResponse.json({ error: 'Failed to fetch track' }, { status: 500 });
   }
 }
+
+// Mark the route as dynamic
+export const dynamic = 'force-dynamic';
+// Disable Next.js cache
+export const revalidate = 0;
