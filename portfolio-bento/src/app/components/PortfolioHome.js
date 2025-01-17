@@ -4,6 +4,7 @@ import TypeWriterEffect from './TypeWriterEffect';
 import Resume from './BentoGridItems/Resume';
 import Skills from './BentoGridItems/Skills';
 import Socials from './BentoGridItems/Socials';
+import Spotify from './BentoGridItems/Spotify';
 
 const Portfolio = () => {
 
@@ -42,9 +43,9 @@ const Portfolio = () => {
           <Socials/>
         </div>
 
-        {/* Social Icons */}
+        {/* Spotify */}
         <div className="absolute bottom-4 right-4 w-[20vw] h-[33vh] bg-mainBg text-lightNeutral rounded-lg  animate-float7 flex items-center justify-center">
-          Social Icons
+          <Spotify/>
         </div>
 
         {/* Center Block (Name and Title) */}
@@ -68,44 +69,44 @@ const Portfolio = () => {
       {/* Mobile/Tablet Layout - Only visible on small/medium screens */}
       <div className="lg:hidden flex flex-col space-y-4 p-4">
         {/* Name and Title */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 text-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg text-center">
           <p className="font-bold text-xl"><TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true} /></p>
           <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]} /></p>
         </div>
 
         {/* Work Experience */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[300px] flex items-center justify-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[300px] flex items-center justify-center">
           <WorkExperience />
         </div>
 
         {/* Skills */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg shadow-lg p-6 min-h-[200px] flex items-center justify-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg shadow-lg  min-h-[200px] flex items-center justify-center">
           <Skills/>
         </div>
 
         {/* Projects */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[200px] flex items-center justify-center">
           Projects
         </div>
 
         {/* Education */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[200px] flex items-center justify-center">
           Education
         </div>
 
         {/* Resume */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg  p-6 min-h-[200px] flex items-center justify-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg   min-h-[200px] flex items-center justify-center">
           <Resume/>
         </div>
 
         {/* Contact Me */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[200px] flex items-center justify-center">
           <Socials/>
         </div>
 
-        {/* Social Icons */}
-        <div className="w-full bg-mainBg text-lightNeutral rounded-lg p-6 min-h-[200px] flex items-center justify-center">
-          Social Icons
+        {/* Spotify */}
+        <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[200px] flex items-center justify-center">
+          <Spotify/>
         </div>
       </div>
     </div>
