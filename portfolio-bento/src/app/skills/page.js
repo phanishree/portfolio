@@ -161,8 +161,8 @@ export default function Skills() {
                             onClick={() => setSelected("recruiters")}
                             className={`px-4 py-2 rounded-full border-2 text-base ${
                                 selected === "recruiters"
-                                    ? "border-borderColor text-accentText shadow-md shadow-accentColor/50"
-                                    : "border-transparent text-lightNeutral hover:border-accentColor hover:text-accentText opacity-50"
+                                    ? "border-borderColor text-lightNeutral shadow-md shadow-accentColor/50"
+                                    : "border-transparent text-lightNeutral hover:border-accentColor hover:text-grey opacity-50"
                             }`}
                         >
                             For Recruiters
@@ -171,8 +171,8 @@ export default function Skills() {
                             onClick={() => setSelected("everyone")}
                             className={`px-4 py-2 rounded-full border-2 text-base ${
                                 selected === "everyone"
-                                    ? "border-borderColor text-accentText shadow-md shadow-accentColor/50"
-                                    : "border-transparent text-lightNeutral hover:border-accentColor hover:text-accentText opacity-50"
+                                    ? "border-borderColor text-lightNeutral shadow-md shadow-accentColor/50"
+                                    : "border-transparent text-lightNeutral hover:border-accentColor hover:text-grey opacity-50"
                             }`}
                         >
                             For Developers
@@ -189,7 +189,7 @@ export default function Skills() {
                                     <div className="w-full h-full">
                                         <BallCanvas icon={technology.icon.src} />
                                     </div>
-                                    <p className="text-sm md:text-base">{technology.name}</p>
+                                    <p className="text-sm md:text-base text-lightNeutral">{technology.name}</p>
                                 </div>
                             ))}
                         </div>
