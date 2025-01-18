@@ -22,7 +22,7 @@ export default function Socials() {
         if(showToast){
             setTimeout(()=>{
                 setShowToast(false);
-            }, 2000);
+            }, 1500);
         }
     },[showToast]);
 

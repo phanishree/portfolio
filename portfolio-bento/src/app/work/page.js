@@ -126,7 +126,7 @@ export default function WorkExperience() {
         },
         {
             title: "Ad Logic SDK",
-            image: "/multi-screen.jpg",
+            image: "/sdk.png",
             points: [
                 "Architected a cross-platform ad integration SDK for OTT apps",
                 "Integrated industry-standard viewability tracking with OM-SDK",
