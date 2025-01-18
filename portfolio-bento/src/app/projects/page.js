@@ -110,7 +110,7 @@ const ProjectsSection = () => {
             title: "Music Player App",
             description: "A desktop app for playing music. Features include playlists, favourite, trends and many more with a beautiful UI.",
             tags: ["Java", "JavaFx", "MySQL"],
-            collaborators: [{name: "Rachitha", link: "hchdc"}],
+            collaborators: [{name: "Rachitha", link: "https://www.linkedin.com/in/rachitha-br/"}],
             githubLink: "https://github.com/phanishree/MusicPlayer",
             liveLink: "#",
         },
@@ -125,7 +125,7 @@ const ProjectsSection = () => {
             title: "Code generator using LLM",
             description: "A code generator that uses LLM to generates server code and testcases in Node.Js. This was part of a hacakthon we participated in.",
             tags: ["Node.js", "OpenAi (LLM)", "JavaScript"],
-            collaborators: [{name:"Greeshma", link: "hchdc"}, {name: "Rachitha", link: "hchdc"}, {name: "Gokul", link: "hchdc"}, {name: "Ganesh", link: "hchdc"}],
+            collaborators: [{name:"Greeshma", link: "https://www.linkedin.com/in/greeshma-r-r-05290a190"}, {name: "Rachitha", link: "https://www.linkedin.com/in/rachitha-br"}, {name: "Gokul", link: "https://www.linkedin.com/in/gokulvaradan"}, {name: "Ganesh", link: "https://www.linkedin.com/in/ganeshmaddy56"}],
             githubLink: "https://github.com/phanishree/hackathon_repo",
             liveLink: "#",
         }
