@@ -5,6 +5,8 @@ import Resume from './BentoGridItems/Resume';
 import Skills from './BentoGridItems/Skills';
 import Socials from './BentoGridItems/Socials';
 import Spotify from './BentoGridItems/Spotify';
+import Education from './BentoGridItems/Education';
+import Projects from './BentoGridItems/Projects';
 
 const Portfolio = () => {
 
@@ -20,7 +22,7 @@ const Portfolio = () => {
 
         {/* Projects */}
         <div className="absolute top-4 left-[32vw] w-[35vw] h-[22vh] bg-mainBg text-lightNeutral rounded-lg  animate-float2 flex items-center justify-center">
-          Projects
+          <Projects/>
         </div>
 
         {/* Skills */}
@@ -30,7 +32,7 @@ const Portfolio = () => {
 
         {/* Education */}
         <div className="absolute top-[25vh] right-4 w-[16vw] h-[38vh] bg-mainBg text-lightNeutral rounded-lg  animate-float4 flex items-center justify-center">
-          Education
+          <Education/>
         </div>
 
         {/* Resume */}
@@ -50,16 +52,7 @@ const Portfolio = () => {
 
         {/* Center Block (Name and Title) */}
         <div className="absolute top-[25vh] left-[32vw] w-[50vw] h-[38vh] bg-mainBg text-lightNeutral rounded-lg  animate-float8 flex flex-col items-center justify-center text-center">
-          <p className="font-bold text-xl">
-            {/* <Typewriter
-            words={['Phanishree']}
-            cursor
-            cursorStyle='_'
-            cursorBlinking
-            typeSpeed={70}
-            deleteSpeed={50}
-            delaySpeed={1000}
-          /> */}
+          <p className="font-bold text-2xl">
             <TypeWriterEffect words={["Phanishree"]} cursorBlinking={true} cursor={true} />
           </p>
           <p className="text-sm"><TypeWriterEffect words={["Creative Web Developer"]} /></p>
@@ -86,12 +79,12 @@ const Portfolio = () => {
 
         {/* Projects */}
         <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[200px] flex items-center justify-center">
-          Projects
+          <Projects/>
         </div>
 
         {/* Education */}
         <div className="w-full h-full bg-mainBg text-lightNeutral rounded-lg  min-h-[200px] flex items-center justify-center">
-          Education
+          <Education/>
         </div>
 
         {/* Resume */}

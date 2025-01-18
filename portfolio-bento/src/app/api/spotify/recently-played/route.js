@@ -4,6 +4,8 @@ import { getAccessToken, SPOTIFY_API_URL } from '@/app/utils/spotify';
 export async function GET() {
   try {
     const token = await getAccessToken();
+
+    // console.log('Token:', token);
     
     const response = await fetch(`${SPOTIFY_API_URL}/me/player/recently-played?limit=1`, {
       headers: {
