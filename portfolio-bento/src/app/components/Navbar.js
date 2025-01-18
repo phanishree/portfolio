@@ -34,9 +34,6 @@ export default function NavBar({ selected }) {
                     <Link href="/resume">
                         <div className={getLinkClass("resume")}>Resume</div>
                     </Link>
-                    <Link href="/contact">
-                        <div className={getLinkClass("contact")}>Contact</div>
-                    </Link>
                 </div>
             </div>
 
@@ -66,9 +63,6 @@ export default function NavBar({ selected }) {
                     </Link>
                     <Link href="/resume">
                         <div className={getLinkClass("resume")}>Resume</div>
-                    </Link>
-                    <Link href="/contact">
-                        <div className={getLinkClass("contact")}>Contact</div>
                     </Link>
                 </div>
             )}

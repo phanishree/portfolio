@@ -71,11 +71,11 @@ const ProjectCard = ({ project, index }) => {
                             {project.collaborators.map((collaborator, collaboratorIndex) => (
                                
                                 <a
-                                    href='#'
+                                    href={collaborator.link}
                                     key={collaboratorIndex}
                                     className="px-4 py-1.5 text-sm rounded-full bg-[hsl(215,24%,12%)] text-lightNeutral font-medium border border-blue-500/20"
                                 >
-                                    {collaborator}
+                                    {collaborator.name}
                                 </a>
                              
                             ))}
@@ -110,7 +110,7 @@ const ProjectsSection = () => {
             title: "Music Player App",
             description: "A desktop app for playing music. Features include playlists, favourite, trends and many more with a beautiful UI.",
             tags: ["Java", "JavaFx", "MySQL"],
-            collaborators: ["Rachitha"],
+            collaborators: [{name: "Rachitha", link: "hchdc"}],
             githubLink: "https://github.com/phanishree/MusicPlayer",
             liveLink: "#",
         },
@@ -125,7 +125,7 @@ const ProjectsSection = () => {
             title: "Code generator using LLM",
             description: "A code generator that uses LLM to generates server code and testcases in Node.Js. This was part of a hacakthon we participated in.",
             tags: ["Node.js", "OpenAi (LLM)", "JavaScript"],
-            collaborators: ["Greeshma", "Rachitha", "Gokul", "Ganesh"],
+            collaborators: [{name:"Greeshma", link: "hchdc"}, {name: "Rachitha", link: "hchdc"}, {name: "Gokul", link: "hchdc"}, {name: "Ganesh", link: "hchdc"}],
             githubLink: "https://github.com/phanishree/hackathon_repo",
             liveLink: "#",
         }
