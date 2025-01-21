@@ -23,7 +23,7 @@ export default function WorkExperienceCard({ project, index }) {
             className={`flex ${isOdd ? "justify-end" : "justify-start"} w-full md:w-[90vw]`}
         >
             <div
-                className={`flex flex-col md:flex-row ${isOdd ? "md:flex-row-reverse" : ""} items-center w-full md:w-[70vw] bg-purple text-white shadow-xl rounded-xl p-6 mb-6 hover:shadow-2xl transition-shadow duration-300 space-y-4 md:space-y-0 md:space-x-4`}
+                className={`flex flex-col md:flex-row ${isOdd ? "md:flex-row-reverse" : ""} items-center w-full md:w-[70vw] bg-mainBg border border-borderBg text-white shadow-xl rounded-xl p-6 mb-6 hover:shadow-2xl transition-shadow duration-300 space-y-4 md:space-y-0 md:space-x-4`}
             >
 
                 <div className="flex-1 flex justify-center">
